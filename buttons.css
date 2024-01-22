@@ -1,0 +1,66 @@
+.myfirstbutton{font-size:45px;
+     background-color:blue;
+     color:royal blue; 
+     border-radius:10px;
+      width:250px;
+    
+    }
+
+
+
+
+
+
+
+.myfirstbutton:hover{color:#FFFFFF;
+    
+background: #ADD8E6;
+
+
+
+
+}
+
+
+.mysecondbutton{
+
+    width: 250px;
+    height: 60px;
+border-radius: 10px;
+background-color: darkorchid;
+font-size: 45px;
+transition :all 0.3 seconds ease;
+}
+
+.mysecondbutton: ::before
+{
+    content: '';
+    top: 0;
+    position: absolute;
+    height: 2px; 
+    transition: all 1s ease
+    width: 0; left: 0;
+    background-color: red;
+}
+
+
+.mysecondbutton:after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 100%;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  border-radius: 5px;
+ transition: transform 0.3;
+}
+.mysecondbutton:hover {
+    color:#fff;
+}
+.mysecondbutton:hover:after{left: 0;
+width: 150%}
+
+.mysecondbutton:active{
+    top: 2px ;
+}
